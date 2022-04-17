@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="myLayout" type="id" />
+    <item name="padLayout" type="id" />
+    <item name="leftBtn" type="id" />
+    <item name="midBtn" type="id" />
+    <item name="rightBtn" type="id" />
+</resources>

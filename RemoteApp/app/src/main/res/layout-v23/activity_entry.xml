@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EntryActivity">
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifImageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/scifibg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/todo"
+        android:foreground="@drawable/scifistillbg"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/gifImageView"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/scifibg" />
+
+    <ImageView
+        android:id="@+id/wifiBtn"
+        android:layout_width="139dp"
+        android:layout_height="117dp"
+        android:clickable="true"
+        android:contentDescription="@string/main_image"
+        android:focusable="true"
+        android:foreground="@drawable/wifibutton"
+        android:hapticFeedbackEnabled="true"
+        android:scaleX="1"
+        android:scaleY="1"
+        android:soundEffectsEnabled="true"
+        android:stateListAnimator="@android:anim/slide_in_left"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/gifImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/gifImageView"
+        app:layout_constraintVertical_bias="0.396"
+        app:rippleColor="#FB1100" />
+
+    <ImageView
+        android:id="@+id/ravenLogo"
+        android:layout_width="103dp"
+        android:layout_height="93dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.634"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ravenglowlogo" />
+
+    <TextView
+        android:id="@+id/pdby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/product_by"
+        android:textColor="#03DEFF"
+        android:textColorHint="#00DDFF"
+        app:layout_constraintBottom_toBottomOf="@+id/ravenLogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.735"
+        app:layout_constraintStart_toStartOf="@+id/ravenLogo"
+        app:layout_constraintTop_toTopOf="@+id/ravenLogo"
+        app:layout_constraintVertical_bias="0.216" />
+
+    <TextView
+        android:id="@+id/raven"
+        android:layout_width="105dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/raven"
+        android:textColor="#0091EA"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ravenLogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/ravenLogo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.589" />
+
+    <Button
+        android:id="@+id/hotspotBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="139dp"
+        android:height="117dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/action_settings"
+        android:foreground="@drawable/hotspotbtn"
+        app:layout_constraintBottom_toBottomOf="@+id/gifImageView"
+        app:layout_constraintEnd_toEndOf="@+id/wifiBtn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/wifiBtn"
+        app:layout_constraintTop_toBottomOf="@+id/wifiBtn"
+        app:layout_constraintVertical_bias="0.136" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

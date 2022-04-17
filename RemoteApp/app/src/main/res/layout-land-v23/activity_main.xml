@@ -1,0 +1,182 @@
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="false"
+    android:background="#010B42"
+    android:clipToPadding="true"
+    android:id="@+id/drawer_layout"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="left"
+    tools:ignore="MissingDefaultResource">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/appbar_navigation_drawer"
+        layout="@layout/app_bar" />
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/headerfile"
+        app:menu="@menu/sidemenu" >
+
+    </com.google.android.material.navigation.NavigationView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/gifImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:rotation="180"
+            android:scaleType="fitXY"
+            android:src="@drawable/anim1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <View
+            android:id="@+id/padView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="38dp"
+            android:layout_marginEnd="45dp"
+            android:layout_marginBottom="100dp"
+            android:background="@android:color/transparent"
+            android:backgroundTint="#25AE2B"
+            android:fitsSystemWindows="false"
+            android:foreground="@drawable/transparent"
+            android:scaleX="1"
+            android:scaleY="1"
+            app:barrierAllowsGoneWidgets="false"
+            app:layout_constrainedHeight="false"
+            app:layout_constrainedWidth="false"
+            app:layout_constraintBottom_toBottomOf="@+id/padView2"
+            app:layout_constraintEnd_toEndOf="@+id/padView2"
+            app:layout_constraintHorizontal_bias="0.486"
+            app:layout_constraintStart_toStartOf="@+id/padView2"
+            app:layout_constraintTop_toTopOf="@+id/padView2"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <View
+            android:id="@+id/padView2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@android:color/transparent"
+            android:backgroundTint="#25AE2B"
+            android:fadingEdgeLength="30dp"
+            android:fitsSystemWindows="true"
+            android:foreground="@drawable/mousepad"
+            android:requiresFadingEdge="vertical"
+            app:barrierAllowsGoneWidgets="false"
+            app:layout_constrainedHeight="false"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintBottom_toTopOf="@+id/midBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+
+            app:layout_constraintWidth_max="wrap"
+            app:layout_constraintWidth_min="wrap"
+            app:layout_wrapBehaviorInParent="skipped"
+            tools:ignore="UnusedAttribute"
+            tools:targetApi="m" />
+
+        <Button
+            android:id="@+id/midBtn"
+            android:layout_width="109dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="#000000"
+            android:foreground="@drawable/mousepad"
+            android:text="@string/mid"
+            android:textColor="#FBFBFB"
+            app:layout_constrainedHeight="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/rightBtn"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/leftBtn"
+            app:layout_constraintTop_toBottomOf="@+id/padView2"
+            tools:ignore="UnusedAttribute,TextContrastCheck" />
+
+        <Button
+            android:id="@+id/leftBtn"
+            android:layout_width="271dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="3dp"
+            android:backgroundTint="#232323"
+            android:fitsSystemWindows="true"
+            android:foreground="@drawable/mousepad"
+            android:includeFontPadding="false"
+            android:text="@string/left"
+            android:textColor="#FDFCFC"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/padView"
+            app:layout_constraintHorizontal_bias="0.03"
+            app:layout_constraintStart_toStartOf="@+id/padView2"
+            app:layout_constraintTop_toBottomOf="@+id/padView2"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_wrapBehaviorInParent="horizontal_only"
+            tools:ignore="UnusedAttribute,TextContrastCheck" />
+
+        <Button
+            android:id="@+id/rightBtn"
+            android:layout_width="276dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="3dp"
+            android:backgroundTint="#232323"
+            android:foreground="@drawable/mousepad"
+            android:text="@string/right"
+            android:textColor="#FBFBFB"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/padView2"
+            app:layout_constraintHorizontal_bias="0.969"
+            app:layout_constraintStart_toStartOf="@+id/padView"
+            app:layout_constraintTop_toBottomOf="@+id/padView2"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="UnusedAttribute,TextContrastCheck" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/horizontalBr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="393dp"
+            android:layout_marginEnd="10dp"
+            app:barrierDirection="top"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Switch
+            android:id="@+id/btnSwitch"
+            android:layout_width="66dp"
+            android:layout_height="37dp"
+            android:buttonTintMode="add"
+            android:minWidth="48dp"
+            android:minHeight="32dp"
+            android:thumbTint="#FF0000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.51"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

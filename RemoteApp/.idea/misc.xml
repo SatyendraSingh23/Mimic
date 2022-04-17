@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/HP/AndroidStudioProjects/RemoteApp/app/src/main/res/drawable-v24/animraven.xml" value="0.144" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/RemoteApp/app/src/main/res/drawable/headercolor.xml" value="0.147" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/RemoteApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2115" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/RemoteApp/app/src/main/res/layout-land-keysexposed/activity_main2.xml" value="0.21516754850088182" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/RemoteApp/app/src/main/res/layout-land-v23/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/RemoteApp/app/src/main/res/layout-land/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/RemoteApp/app/src/main/res/layout-land/activity_main2.xml" value="0.264" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/RemoteApp/app/src/main/res/layout-land/activity_main3.xml" value="0.2" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/RemoteApp/app/src/main/res/layout-land/app_bar.xml" value="0.264" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/RemoteApp/app/src/main/res/layout-land/content_home.xml" value="0.264" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/RemoteApp/app/src/main/res/layout-land/headerfile.xml" value="0.49361702127659574" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/RemoteApp/app/src/main/res/layout-land/toolbar.xml" value="0.2" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/RemoteApp/app/src/main/res/layout-v23/activity_entry.xml" value="0.176" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/RemoteApp/app/src/main/res/layout-v23/activity_main2.xml" value="0.19479166666666667" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/RemoteApp/app/src/main/res/layout-v23/activity_main3.xml" value="0.264" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/RemoteApp/app/src/main/res/layout-v23/activity_presentation.xml" value="0.2" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/RemoteApp/app/src/main/res/layout-v23/app_bar.xml" value="0.17239583333333333" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/RemoteApp/app/src/main/res/layout-v23/content_home.xml" value="0.17239583333333333" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/RemoteApp/app/src/main/res/layout-v23/headerfile.xml" value="0.17239583333333333" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/RemoteApp/app/src/main/res/layout/activity_choice.xml" value="0.2" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/RemoteApp/app/src/main/res/layout/activity_code_choice.xml" value="0.2" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/RemoteApp/app/src/main/res/layout/activity_entry.xml" value="0.16799999999999998" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/RemoteApp/app/src/main/res/layout/activity_fullscreen.xml" value="0.16" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/RemoteApp/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/RemoteApp/app/src/main/res/layout/activity_main2.xml" value="0.190625" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/RemoteApp/app/src/main/res/layout/activity_main3.xml" value="0.2" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/RemoteApp/app/src/main/res/layout/activity_presentation.xml" value="0.2" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/RemoteApp/app/src/main/res/layout/activity_scan.xml" value="0.2078125" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/RemoteApp/app/src/main/res/layout/activitymain.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/RemoteApp/app/src/main/res/layout/app_bar.xml" value="0.15982905982905982" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/RemoteApp/app/src/main/res/layout/content_home.xml" value="0.2" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/RemoteApp/app/src/main/res/layout/content_presentation.xml" value="0.136" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/RemoteApp/app/src/main/res/layout/fragment_gallery.xml" value="0.1141025641025641" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/RemoteApp/app/src/main/res/layout/fragment_home.xml" value="0.1141025641025641" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/RemoteApp/app/src/main/res/layout/fragment_slideshow.xml" value="0.1141025641025641" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/RemoteApp/app/src/main/res/layout/headerfile.xml" value="0.25" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/RemoteApp/app/src/main/res/layout/switch_item.xml" value="0.20854700854700856" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/RemoteApp/app/src/main/res/layout/test.xml" value="0.176" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/RemoteApp/app/src/main/res/layout/toolbar.xml" value="0.15982905982905982" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/RemoteApp/app/src/main/res/menu/activity_main_drawer.xml" value="0.4" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/RemoteApp/app/src/main/res/menu/sidemenu.xml" value="0.264" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/RemoteApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1415" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.2" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

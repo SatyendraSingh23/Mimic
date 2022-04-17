@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navkeyboard"
+        android:checkable="false"
+        android:enabled="true"
+        android:icon="@drawable/navkeyboard"
+        android:title="@string/keyboard"
+        android:visible="true" />
+    <item
+        android:id="@+id/navmouse"
+        android:checkable="false"
+        android:enabled="true"
+        android:icon="@drawable/navmouse"
+        android:title="@string/mouse"
+        android:visible="true" />
+    <item
+        android:id="@+id/pptMode"
+        android:icon="@drawable/ppticon"
+        android:title="Presentation Mode" />
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/navlogout"
+        android:title="@string/logout"
+        android:visible="true" />
+</menu>

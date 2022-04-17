@@ -1,0 +1,130 @@
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="false"
+    android:background="#010B42"
+    android:clipToPadding="true"
+    android:id="@+id/drawer_layout"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="left"
+    tools:ignore="MissingDefaultResource">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/appbar_navigation_drawer"
+        layout="@layout/app_bar" />
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/headerfile"
+        app:menu="@menu/sidemenu" >
+
+    </com.google.android.material.navigation.NavigationView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pptbackground"
+    tools:context=".presentationActivity">
+
+        <View
+            android:id="@+id/padView4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="20sp"
+            android:layout_marginTop="30sp"
+            android:layout_marginEnd="20sp"
+            android:layout_marginBottom="25sp"
+            android:background="@android:color/transparent"
+            android:backgroundTint="#25AE2B"
+            android:fitsSystemWindows="false"
+            android:foreground="@drawable/transparent"
+            android:scaleX="1"
+            android:scaleY="1"
+            app:barrierAllowsGoneWidgets="false"
+            app:layout_constrainedHeight="true"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintBottom_toBottomOf="@+id/padView3"
+            app:layout_constraintEnd_toEndOf="@+id/padView3"
+            app:layout_constraintHeight="match_constraint"
+            app:layout_constraintStart_toStartOf="@+id/padView3"
+            app:layout_constraintTop_toTopOf="@+id/padView3"
+            app:layout_constraintWidth="match_constraint" />
+
+        <View
+            android:id="@+id/padView3"
+            android:layout_width="0dp"
+            android:layout_height="246dp"
+            android:layout_marginBottom="500dp"
+            android:background="@android:color/transparent"
+            android:backgroundTint="#25AE2B"
+            android:fadingEdgeLength="30dp"
+            android:fitsSystemWindows="true"
+            android:foreground="@drawable/mousepad"
+            android:requiresFadingEdge="vertical"
+            app:barrierAllowsGoneWidgets="false"
+            app:layout_constrainedHeight="false"
+
+            app:layout_constrainedWidth="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_max="wrap"
+            app:layout_constraintWidth_min="wrap"
+            app:layout_wrapBehaviorInParent="skipped"
+            tools:ignore="UnusedAttribute"
+            tools:targetApi="m" />
+
+        <Button
+        android:id="@+id/leftPptBtn"
+        android:layout_width="145dp"
+        android:layout_height="59dp"
+        android:background="@android:color/transparent"
+        android:foreground="@drawable/leftbtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.864"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/rightPptBtn"
+        android:layout_width="145dp"
+        android:layout_height="59dp"
+        android:background="@android:color/transparent"
+        android:foreground="@drawable/rightbtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.816"
+        app:layout_constraintStart_toEndOf="@+id/leftPptBtn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.863"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/slideShowBtn"
+        android:layout_width="138dp"
+        android:layout_height="86dp"
+        android:layout_marginBottom="100dp"
+        android:background="@android:color/transparent"
+        android:foreground="@drawable/slideshowoffbtn"
+        app:layout_constraintBottom_toTopOf="@+id/leftPptBtn"
+        app:layout_constraintEnd_toEndOf="@+id/rightPptBtn"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/leftPptBtn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.995"
+        tools:ignore="SpeakableTextPresentCheck" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>
