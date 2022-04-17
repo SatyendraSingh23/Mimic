@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onMouseDragged="#onMouseDragged" onMousePressed="#onMousePressed" prefHeight="708.0" prefWidth="1261.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.raven.project.PrimaryController">
+   <children>
+      <ImageView disable="true" fitHeight="708.0" fitWidth="1261.0" layoutX="0.8000000000001819" layoutY="-3.0" onMouseClicked="#backButtonActionPerformed" pickOnBounds="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-2.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@images/mainimage.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="settingBtn" accessibleRole="BUTTON" fitHeight="49.0" fitWidth="200.0" layoutX="7.0" layoutY="252.0" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="7.0">
+         <image>
+            <Image url="@images/settingbtn.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Reflection fraction="1.0" topOpacity="0.14" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="supportusBtn" accessibleRole="BUTTON" fitHeight="44.0" fitWidth="200.0" layoutX="7.0" layoutY="419.0" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/supportusbtn.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Reflection topOpacity="0.14" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="iconfiedBtn" fitHeight="17.0" fitWidth="18.0" layoutX="1154.0" layoutY="21.0" onMouseClicked="#iconifiedButtonActionPerformed" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/iconifiedbtn.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="maximizedBtn" fitHeight="19.0" fitWidth="18.0" layoutX="1188.0" layoutY="12.0" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/maximizebtn.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="closeBtn" fitHeight="19.0" fitWidth="23.0" layoutX="1222.0" layoutY="10.0" onMouseClicked="#closeButtonActionPerformed" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/exitbtn.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="generateqrcodeBtn" fitHeight="94.0" fitWidth="346.0" layoutX="483.0" layoutY="205.0" onMouseClicked="#generateqrcodeBtnActionPerformed" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/generateqrcodebutton.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="generatecodeBtn" fitHeight="94.0" fitWidth="293.0" layoutX="484.0" layoutY="393.0" onMouseClicked="#generatecodeBtnActionPerformed" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/generatecodebutton.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="aboutusBtn" accessibleRole="BUTTON" fitHeight="56.0" fitWidth="200.0" layoutX="7.0" layoutY="336.0" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/aboutusbtn.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Reflection topOpacity="0.14" />
+         </effect>
+      </ImageView>
+      <Label fx:id="connectionName" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" layoutX="482.0" layoutY="7.0" prefHeight="42.0" prefWidth="286.0" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font name="Verdana Bold" size="27.0" />
+         </font>
+         <effect>
+            <Lighting bumpInput="$null" diffuseConstant="2.0" specularConstant="0.0" specularExponent="10.28" surfaceScale="1.78">
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Label>
+      <Label fx:id="connectionTimeLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="318.0" layoutY="29.0" prefHeight="19.0" prefWidth="148.0" textFill="#00ffed">
+         <font>
+            <Font name="OCR A Extended" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="connectionDateLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="776.0" layoutY="29.0" prefHeight="19.0" prefWidth="148.0" textFill="#00ffed">
+         <font>
+            <Font name="OCR A Extended" size="15.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="backButton" disable="true" fitHeight="29.0" fitWidth="128.0" layoutX="1133.0" layoutY="56.0" onMouseClicked="#backButtonActionPerformed" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/backBtn.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Reflection />
+         </effect>
+      </ImageView>
+   </children>
+</AnchorPane>
